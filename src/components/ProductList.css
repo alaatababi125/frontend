@@ -1,0 +1,114 @@
+/* Container & Background */
+.space-y-8 {
+  padding: 3rem 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #f8fafc; /* Very light slate */
+}
+
+/* Glassmorphism Search Bar */
+input[type="text"] {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 232, 240, 0.5);
+  border-radius: 14px;
+  padding: 0.85rem 1.25rem 0.85rem 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type="text"]:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Professional Product Card */
+.bg-white.rounded-2xl {
+  background: #ffffff;
+  border: 1px solid rgba(241, 245, 249, 1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.bg-white.rounded-2xl:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+/* Image "The Stage" */
+.h-48.w-full.bg-slate-50 {
+  background: radial-gradient(circle at center, #ffffff 0%, #f1f5f9 100%);
+  border-bottom: 1px solid rgba(241, 245, 249, 0.8);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-48 img {
+  filter: drop-shadow(0 15px 15px rgba(0,0,0,0.08));
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bg-white.rounded-2xl:hover img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Typography Refinement */
+.text-slate-800 {
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+/* Fix for the 2-line description */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /* This is the critical line */
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* Add the standard version too */
+}
+
+/* Fix for the 1-line title */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+/* Status Badges */
+.bg-emerald-50 {
+  background-color: #ecfdf5;
+  color: #059669;
+  border: 1px solid #d1fae5;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Premium Button */
+.bg-blue-600 {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bg-blue-600:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Price Display */
+.text-blue-600 {
+  color: #2563eb;
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
+}
